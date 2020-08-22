@@ -46,6 +46,9 @@
         </Greet>
 
   6. Here props.children will reflect both <p> tag elements
+  7. props are immutable ie. props.name = "abc" is illegal operation. 
+  8. We cant chnage value of prop attributes.
+
     */
   
-}
+
