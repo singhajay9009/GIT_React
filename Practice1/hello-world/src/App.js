@@ -10,12 +10,17 @@ class App extends Component{
     return (
       <div className="App">
         <header className="App-header">
-          <p>
+  
             Hello World!
             { /*  <Greet />  */ }
+            <Greet name='Clark' superhero='Supername' >
+              <p>This is children prop1</p>
+              <p> This is children prop2</p>
+              </Greet>
+            <Greet name='Daina' superhero='wonder woman'/>
             <Welcome />
             <Hello />
-          </p>
+        
           <a
             className="App-link"
             href="https://reactjs.org"

@@ -6,6 +6,15 @@ import React from 'react';
 //     return <h1> hello js! </h1>;
 // }
 
-const Greet = () => <h1> Hello js!</h1> 
+const Greet = props => {
+    console.log(props)
+    console.log( `Hello ${props.name} ${props.superhero}`);
+    return (
+    <div>
+        <h1> Hello {props.name} {props.superhero}!</h1> 
+        {props.children}
+    </div>
+    )   
+}
 
 export default Greet;
